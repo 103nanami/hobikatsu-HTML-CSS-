@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コード -->
+    <meta charset="UTF-8">
+
+    <!-- ブラウザで表示されるタイトル -->
+    <title>ホビ活 | 「好き」をはじめる趣味活サイト</title>
+
+    <!-- CSS読み込み -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'uiw7klq',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+
+      <div class="header">
+        <div class="header_icon">
+          <img src="image/icon.png" alt="">
+        </div>
+        <div class="header_logo">
+          <h3>ホビ活</h3>
+        </div>
+        <div class="header_navi">
+          <ul>
+            <li>
+              <a href="#ABOUT">ABOUT</a>
+            </li>
+            <li>
+              <a href="#COOPERATION">COOPERATION</a>
+            </li>
+            <li>
+              <a href="login.html">LOGIN</a>
+            </li>
+            <li>
+              <a href="signup.html">SIGNUP</a>
+            </li>
+          </ul>
+        </div>
+        <div class="humberger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="main_visual">
+        <img src="image/main_visual.png" alt="">
+        <div class="main_copy">
+          <h1 class="main_copy1">好きを見つける。</h1>
+          <h1 class="main_copy2">好きでつながる。</h1>
+        </div>
+      </div>
+
+      <ul class="slider">
+        <li><img src="image/1.png" alt=""></li>
+        <li><img src="image/2.png" alt=""></li>
+        <li><img src="image/3.png" alt=""></li>
+        <li><img src="image/4.png" alt=""></li>
+        <li><img src="image/5.png" alt=""></li>
+        <li><img src="image/6.png" alt=""></li>
+        <li><img src="image/7.png" alt=""></li>
+      </ul>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="slick/slick.min.js"></script>
+
+      <script type="text/javascript">
+        // 4. サムネイル付きのスライダー
+        $(function() {
+          //ここにSlickのjQueryを記述
+          $('.slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 5,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            dots: true,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: true,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        });
+      </script>
+
+      <div id="ABOUT">
+        <div class="main_title">
+          <p>WHAT'S HOBBYKATSU ?</p>
+        </div>
+        <div id="col1">
+          <div class="col-cap1">
+            <img src="image/blue.png" alt="">
+            <h3 class="h3-top1">ホビ活は、あなたがあなたらしく</h3>
+            <h3 class="h3-bottom1">輝ける世界を応援します</h3>
+            <p>
+              生活も働き方も自由になってきた時代。<br>
+              「わたし」に向き合う時間も増えました。<br>
+              「わたしってなんだろう？」<br>
+              ホビ活はその問いに、「好き」という<br>
+              アンサーを見つけました。
+              </p>
+          </div>
+          <div class="col-img1">
+            <img src="image/music.png" alt="">
+          </div>
+        </div>
+
+        <div id="col2">
+          <div class="col-img2">
+            <img src="image/book.png" alt="">
+          </div>
+          <div class="col-cap2">
+            <img src="image/pink.png" alt="">
+            <h3>「好き」はあなたを強くする</h3>
+            <p>
+              「好き」はあなたを物語り、ワクワクさせ、<br>
+                安らぎを与える、あなたの拠り所です。<br>
+                ホビ活は、たくさんの「好き」をあなた<br>
+                に提供します。<br>
+                一緒に「好き」を見つけましょう。
+            </p>
+          </div>
+        </div>
+
+        <div id="col3">
+          <div class="col-cap3">
+            <img src="image/blue.png" alt="">
+            <h3 class="h3-top3">好きを見つける</h3>
+            <h3 class="h3-bottom3">好きでつながる</h3>
+            <p>
+              ホビ活には、同じ「好き」を体験する<br>
+              たくさんのユーザーがいます。<br>
+              ホビ活を通して、たくさんの仲間と出会い<br>
+              ましょう。
+            </p>
+          </div>
+          <div class="col-img3">
+            <img src="image/bag.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="interbal">
+        <div class="intro">
+          <p>さあ、ホビ活をはじめてみましょう</p>
+        </div>
+        <div class="serch">
+          <p>さがしてみる</p>
+          <div class="serch-icon">
+            <a href="serch.html"><img src="image/search.png" alt=""></a>
+          </div>
+        </div>
+        <div class="botton">
+          <a href="signup.html">会員登録して購入する</a>
+        </div>
+      </div>
+
+      <div id="COOPERATION">
+        <div class="coop_text">
+          <h3>COOPERATION</h3>
+          <p>
+            ホビ活は、現在３２の事業者様の賛同を得て、商品を販売しています。<br>
+            ホビ活で商品を販売することによって、新しい顧客獲得に繋がります。<br>
+            地域、業態問わず、「好き」を提供する商品をお待ちしています。<br>
+          </p>
+        </div>
+        <div class="coop_img">
+          <img src="image/cooperation.jpg" alt="">
+          <p>AND MORE</p>
+        </div>
+        <div class="coop_botton">
+          <a href="mail.html">お問い合わせはこちら</a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>@HOBBYKATSU.co</p>
+      </div>
+    </div>
+  </body>
+
+
+</html>
