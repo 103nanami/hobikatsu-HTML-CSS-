@@ -251,6 +251,7 @@
   z-index: 100;
   width:45%;
   margin-top:100px;
+  transform: scale(1);
 }
 
 .col-img1 img{
@@ -276,6 +277,28 @@
   z-index: 100;
   width:35%;
   margin-top:200px;
+}
+
+.col-img3:hover{
+  z-index: 100;
+  width:35%;
+  margin-top:200px;
+
+  animation-name: buruburu;
+  animation-fill-mode:backwards;
+  animation-duration:0.2s;
+  animation-delay: 1s;
+  animation-direction:normal;
+  animation-timing-function:ease-out;
+}
+
+@keyframes buruburu
+{
+  from{ transform: rotate( -5deg ); }
+
+  50%{ transform: rotate( 5deg ); }
+
+  to{ transform: rotate( -5deg ); }
 }
 
 .col-img3 img{

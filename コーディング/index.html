@@ -80,6 +80,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="slick/slick.min.js"></script>
 
+
       <script type="text/javascript">
         // 4. サムネイル付きのスライダー
         $(function() {
@@ -218,18 +219,25 @@ $(function() {
   /*セレクタ＝どの要素に処理を適用するかを表す部分
     .col-img3がセレクタ。クラスには"."、idには"#"をつける*/
     $(".col-img1").mouseover(function() {
-        $(".col-img1").toggle(function() {
-            $(".col-img1").animate({
-                width: 800,
-                height: 600
-            },
-            500);
-        },function(){
-            $(".col-img1").animate({
-                width: 600,
-                height: 400
-            }, 200);
-        });
+        $(".col-img1").css({ transform: "scale(1.5)"});
+    });
+    $(".col-img1").mouseout(function() {
+        $(".col-img1").css({ transform: "scale(1)"});
     });
 });
+
+
+var huwahuwa = function(){
+  $(".col-img2").mouseover(function() {
+    $(".col-img2").animate({marginTop: '-=80px'
+      }, 800).animate({marginTop: '+=80px'
+      }, 800);
+  });
+  $(".col-img2").mouseout(function() {
+    $(".col-img2").stop.stop(false, true);
+  });
+}
+setInterval(huwahuwa, 1600);
+
+
 </script>
